@@ -1,5 +1,5 @@
 .title{
-    position: absolute;
+    /*position: absolute;*/
     font-weight: 300;
     /*font-size: 4.4em;*/
     /*line-height: 1;*/
@@ -7,7 +7,7 @@
     margin: 0;
     top: 5%;
     width: 100%;
-    text-align: center;
+    /*text-align: center;*/
     /*word-spacing: -0.3em;*/
 }
 
