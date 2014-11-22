@@ -1,0 +1,46 @@
+.title{
+    position: absolute;
+    font-weight: 300;
+    /*font-size: 4.4em;*/
+    /*line-height: 1;*/
+    /*letter-spacing: 6px;*/
+    margin: 0;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    /*word-spacing: -0.3em;*/
+}
+
+h1{
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+h3{
+    font-style: italic;
+}
+
+.pt-page-1 {
+    background: #0ac2d2;
+    /*background: #9696a2; grey*/
+}
+
+.pt-page-2 {
+    background: #7bb7fa;
+}
+
+.pt-page-3 {
+    background: #60d7a9;
+}
+
+.pt-page-4 {
+    background: #fdc162;
+}
+
+.pt-page-5 {
+    background: #fd6a62;
+}
+
+.pt-page-6 {
+    background: #f68dbb;
+}
