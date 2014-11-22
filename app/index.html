@@ -23,15 +23,13 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div controller="playCtrl">
-    <input type="text" ng-model="regex"></input>
-    <div id="match-text" ng-model="mtext">This is some match text to test your regex on</div>
+  <div ng-controller="playCtrl">
+    <input type="text" ng-model="regex" ng-keyup="runMatches()"></input>
+    <div id="match-text">{{mtext}}</div>
     <ul>
-      <li ng-repeat = "match in matches">{{match}}</li>
+      <li ng-repeat = "match in matches track by $index">{{match}}</li>
     </ul>
   </div>
-
-  <div>Angular seed app: v<span app-version></span></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
