@@ -1,11 +1,15 @@
-<button id="iterateEffects" class="pt-touch-button">Show next page transition</button>
+
+<div class="pt-triggers">
+    <!-- <div ng-include src="'templates/animationsOptions.html'"></div> -->
+    <span id="animations">
+    <button id="iterateEffects" class="pt-touch-button">Show next page transition</button>
     <div id="dl-menu" class="dl-menuwrapper">
         <button class="dl-trigger">Choose a transition</button>
         <ul class="dl-menu">
             <li>
                 <a href="#">Move</a>
                 <ul class="dl-submenu">
-                    <li data-animation="1"><a href="#">Move to left/ from right</a></li>
+                    <li data-animation="1" id="page2"><a href="#">Move to left/ from right</a></li>
                     <li data-animation="2"><a href="#">Move to right/ from left</a></li>
                     <li data-animation="3"><a href="#">Move to top/ from bottom</a></li>
                     <li data-animation="4"><a href="#">Move to bottom/ from top</a></li>
@@ -132,3 +136,5 @@
             <li data-animation="67"><a href="#">Slide</a></li>
         </ul>
     </div><!-- /dl-menu-wrapper-->
+    </span>
+</div><!-- /triggers -->
