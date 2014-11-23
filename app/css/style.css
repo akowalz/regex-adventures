@@ -110,3 +110,18 @@ h1{
     height: 500px;
     background-color: rgba(0, 0, 0, 0.16);
 }
+
+.pt-page{
+    overflow: scroll;
+}
+
+#xkcd{
+    padding-bottom: 200px;
+}
+
+/*.scroll{*/
+    /*width: 100%;*/
+    /*overflow: scroll;*/
+    /*height: 500px;*/
+    /*background-color: rgba(0, 0, 0, 0.16);*/
+/*}*/
