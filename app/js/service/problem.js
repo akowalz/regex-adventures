@@ -13,7 +13,13 @@ angular.module('app')
         currentProblem += 1;
         $('#' + pages[currentProblem]).click();
     };
-    return {
-        nextProblem: nextProblem
-    };
+
+  var getLevel = function() {
+    return currentProblem + 1;
+  };
+
+  return {
+      nextProblem: nextProblem,
+      getLevel: getLevel
+  };
 });
