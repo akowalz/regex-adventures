@@ -4,8 +4,9 @@
 </div>
 <div class="col-md-8 col-md-offset-2">
     <p class="instructions">Type the expression in the box to select all of the test scores</p>
-    <input class="form-control input-lg" type="text" placeholder="\d">
-    <table cellpadding="1" cellspacing="1" class="table" id="selectData">
+    <input class="form-control input-lg" type="text" placeholder="\d" ng-focus="searching=true" ng-blur="searching=false">
+
+    <table cellpadding="1" cellspacing="1" ng-class="searching ? 'selectData' : ''" class="table">
     <tr>
         <th>Student</th>
         <th>Test Scores</th>
@@ -24,7 +25,7 @@
     </tr>
     <tr>
         <td>Rebekah Yates</td>
-        <td>60</td>
+        <td><span ng-class="searching ? 'highlight' : ''">60</span></td>
     </tr>
     <tr>
         <td>Felicia Good</td>
@@ -49,5 +50,3 @@
     </table>
     <h2>Results:</h2>
 </div>
-
-

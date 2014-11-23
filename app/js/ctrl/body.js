@@ -4,4 +4,5 @@ angular.module('app')
     $scope.nextPage = function () {
 		ProblemService.nextProblem();
     };
+    $scope.searching = false;
 });

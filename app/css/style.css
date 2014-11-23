@@ -53,6 +53,15 @@ h3{
     font-weight: bold;
 }
 
-#selectData{
-    opacity: .4;
+.selectData{
+    color: rgba(255, 255, 255,.4);
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+.highlight{
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    color: yellow;
+    font-size: 125%;
 }
