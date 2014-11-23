@@ -30,3 +30,7 @@
     margin: 0px;
     right: 10px;
 }
+
+.instructions ul li{
+    padding-right: 100px;
+}

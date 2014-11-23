@@ -1,11 +1,21 @@
-<div class="col-md-8 col-md-offset-2 content">
-    <p>So you've got the hang of numbers. Now, find all of the words that end in "y" in this poem. "\w" selects any letter character from a-z, whether it's lowercase or uppercase.</p>
+<span ng-controller="InstructionsCtrl" class="col-md-offset-2 col-md-8">
+
+    <div class="instructions" ng-show="instructionsOn" id="instructionsBox">
+        <button class="btn btn-danger pull-right" style="margin-bottom: 10px;" ng-click="toggleInstructions()">
+            Got It
+            <i class="glyphicon glyphicon-remove"></i>
+        </button>
+        <h2>Instructions</h2>
+        <ul>
+        <li><p>So you've got the hang of numbers. Now, find all of the words that end in "y" in this poem. "\w" selects any letter character from a-z, whether it's lowercase or uppercase.</p></li>
+        </ul>
+        <li> + will let you select any number of letters before the y</li>
+        <li> Don't put any spaces in your regular expression, it will look for those too!</li>
+    </div>
+    <button id="showInstructions" ng-show="!instructionsOn" class="btn btn-warning pull-right" ng-click="toggleInstructions()">
+        Instructions
+        <i class="glyphicon glyphicon-list-alt"></i>
+    </button>
     <ra-regex elm-id="level4" template-name="level4.html" textbox-placeholder="Enter your regex command here" class="level"></ra-regex>
-</div>
-<div class="col-md-2" style="border: solid; border-radius: 5px; background-color: #2FACDA; margin-top: 10px;">
-    <h2>Hints</h2>
-	<ul>
-		<li> + will let you select any number of letters before the y</li>
-		<li> Don't put any spaces in your regular expression, it will look for those too!</li>
-	</ul>
-</div>
+    </div>
+</span>
