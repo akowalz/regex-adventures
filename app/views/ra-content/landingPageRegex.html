@@ -1,8 +1,4 @@
-<div class="col-md-8 col-md-offset-2 content" id="regex">
-    <p class="instructions">Type the expression in the box to select all of the test scores</p>
-    <input class="form-control input-lg" type="text" placeholder="\d" ng-focus="searching=true" ng-blur="searching=false">
-
-    <table cellpadding="1" cellspacing="1" ng-class="searching ? 'selectData' : ''" class="table">
+<table cellpadding="1" cellspacing="1" ng-class="searching ? 'selectData' : ''" class="table" id="level1">
     <tr>
         <th>Student</th>
         <th>Test Scores</th>
@@ -43,13 +39,4 @@
         <td>Edward Horn</td>
         <td><span ng-class="correct ? '' : 'shake shake-little shake-constant'">91</span></td>
     </tr>
-    </table>
-</div>
-<!-- 
-<div class="object shake">shake</div>
-<div class="object shake shake-hard">shake shake-hard</div>
-<div class="object shake shake-slow">shake shake-slow</div>
-<div class="object shake shake-little">shake shake-little</div>
-<div class="object shake shake-horizontal">shake shake-horizontal</div>
-<div class="object shake shake-vertical">shake shake-vertical</div>
-<div class="object shake shake-rotate">shake shake-rotate</div> -->
+</table>

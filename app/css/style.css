@@ -81,7 +81,8 @@ h1{
     box-shadow: 1px 1px 1px grey;
 }
 
-.correct{
+/*.correct{*/
+.highlight{
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     background-color: rgb(9, 219, 115);

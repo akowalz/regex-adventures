@@ -178,8 +178,9 @@
 
 <div id="pt-main" class="pt-perspective">
 	<div class="pt-page pt-page-1">
-		<!-- <div ng-include src="'templates/landingPage.html'"></div> -->
-        <ra-regex elm-id="regex" template-name="landingPage.html"></ra-regex>
+		<div ng-include src="'templates/landingPage.html'"></div>
+        <!-- <p class="instructions">Type the expression in the box to select all of the test scores</p> -->
+        <!-- <input class="form-control input-lg" type="text" placeholder="\d" ng-focus="searching=true" ng-blur="searching=false"> -->
 	</div>
 	<div class="pt-page pt-page-2"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
 	<div class="pt-page pt-page-3"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
@@ -198,6 +199,8 @@
 
 <script src="js/ctrl/body.js"></script>
 <script src="js/service/problem.js"></script>
+<script type="text/javascript" src="lib/regex_highlight.js"></script>
+
 <script src="ra-regex.js"></script>
 <script src="ra-regex-content.js"></script>
 
