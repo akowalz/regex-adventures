@@ -3,10 +3,12 @@ angular.module('app')
     // array levels containing the answers
     var answers = {
         1: ["77", "78", "74", "60", "96", "86", "60", "81", "91"],
-        2: []
+        2: ["April 23, 1952", "January 21, 1952"]
     }
 
     function isEqual(array1, array2){
+        if (array1 === null || array2 === null)
+
         for (var i = 0; i < array1.length; i++) {
             if (array1[i] !== array2[i]){
                 return false;
