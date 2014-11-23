@@ -1,20 +1,26 @@
 <span ng-controller="InstructionsCtrl">
-    <div class="col-md-offset-1 col-md-10 instructions" style="top: {{top}}px;" id="instructionsBox">
+    <div class="col-md-offset-1 col-md-10 instructions" ng-show="instructionsOn" id="instructionsBox">
         <h2>Instructions</h2>
         <ul>
         <li>Extra instructions will go here!</li>
         </ul>
-        <button class="btn btn-danger pull-right" style="margin-bottom: 10px;" ng-click="hide()">
+        <button class="btn btn-danger pull-right" style="margin-bottom: 10px;" ng-click="toggleInstructions()">
             Hide
             <i class="glyphicon glyphicon-remove"></i>
         </button>
     </div>
-    <div class="col-md-10 col-md-offset-1 content" style="top: {{body}}px;">
-      <p>
-        Welcome to <em>Regex Adventure!</em> An online game that teaches
+    <div class="col-md-10 col-md-offset-1 content">
+        <button id="showInstructions" ng-show="!instructionsOn" class="btn btn-primary pull-right" ng-click="toggleInstructions()">
+            Instructions
+            <i class="glyphicon glyphicon-list-alt"></i>
+        </button>
+        <p>
+            Welcome to <em>Regex Adventure!</em> An online game that teaches
         <em>you</em> how to effectively use regular expressions with fun interactive
-        stories!</p>
-        <p>Regular Expressions (or regexes for short) are a powerful tool for
+        stories!
+        </p>
+        <p>
+        Regular Expressions (or regexes for short) are a powerful tool for
         matching substrings within a large piece of text.  Think
         <strong>Ctrl-F</strong> on steroids!  But unlike Ctrl-F, you can match
         against more than just specific characters.  What if you wanted to search a
