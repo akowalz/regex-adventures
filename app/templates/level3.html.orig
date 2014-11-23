@@ -1,5 +1,9 @@
 <div class="col-md-8 col-md-offset-2 content">
+<<<<<<< HEAD
+    <p class="directions">Can I have yo Numbah?</p>
+=======
     <p>Now that you know how to select numbers, you can combine multiple search terms into one to select more complicated expressions. For example '\d-\d' selects a number, then the character "-", then another number, so it would match 8-4, or 9-2. Try selecting all the telephone numbers on the page.  Can I have yo Numbah?</p>
+>>>>>>> fc80eb666e0135ac965c8089cd74e626e1506de7
     <ra-regex elm-id="level3" template-name="level3.html" textbox-placeholder="Lemme get those digits"></ra-regex>
     <h2>Hints</h2>
 	<ul>

@@ -184,12 +184,17 @@
 	<div class="pt-page pt-page-1">
 		<div ng-include src="'templates/intro.html'"></div>
 	</div>
+<<<<<<< HEAD
 	<div class="pt-page pt-page-2">
         <div ng-include src="'templates/landingPage.html'"></div>
     </div>
 	<div class="pt-page pt-page-3">
         <div ng-include src="'templates/level2.html'"></div>
     </div>
+=======
+	<div class="pt-page pt-page-2"><div ng-include src="'templates/landingPage.html'"></div></div>
+	<div class="pt-page pt-page-3"><div ng-include src="'templates/level3.html'"></div></div>
+>>>>>>> fc80eb666e0135ac965c8089cd74e626e1506de7
   <div class="pt-page pt-page-4">
     <div ng-include src="'templates/level2.html'"></div>
   </div>

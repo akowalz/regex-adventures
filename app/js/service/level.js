@@ -4,8 +4,8 @@ angular.module('app')
     var answers = {
         1: ["Let's go!"],
         2: ["77", "78", "74", "60", "96", "86", "60", "81", "91"],
-        3: ["April 23, 1952", "January 21, 1952"]
-    }
+        3: ["April 23, 1952", "January 21, 1952", "July 4, 1984"]
+    };
 
     function isEqual(array1, array2){
         if (array1 === null || array2 === null) { return false; }
@@ -16,7 +16,7 @@ angular.module('app')
             }
         };
         return true;
-    }
+    };
 
     // level starts at 0
     var hasWon = function(level, currentAnswer){
@@ -30,5 +30,5 @@ angular.module('app')
 
     return {
         hasWon: hasWon
-    }
+    };
 });
