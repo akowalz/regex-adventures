@@ -23,14 +23,14 @@ var PageTransitions = (function() {
             max: 67
         },
         keys = {
-            BACKSPACE: 8,
-            DOWN: 40,
-            ENTER: 13,
-            LEFT: 37,
-            RIGHT: 39,
-            SPACE: 32,
-            PAGE_DOWN: 34,
-            PAGE_UP: 33
+            // BACKSPACE: 8,
+            // DOWN: 40,
+            // ENTER: 13,
+            // LEFT: 37,
+            // RIGHT: 39,
+            // SPACE: 32,
+            // PAGE_DOWN: 34,
+            // PAGE_UP: 33
         };
 
 	function init() {

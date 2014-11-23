@@ -48,3 +48,11 @@ h3{
 .pt-page-6 {
     background: #f68dbb;
 }
+
+.instructions{
+    font-weight: bold;
+}
+
+#selectData{
+    opacity: .4;
+}
