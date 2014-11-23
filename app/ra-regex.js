@@ -46,7 +46,7 @@ angular.module('app')
           elm.highlightRegex();
         }
 
-        if (LevelService.hasWon(1, scope.matches)) {
+        if (LevelService.hasWon(ProblemService.getLevel(), scope.matches)) {
           scope.won = true;
         }
       };
