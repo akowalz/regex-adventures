@@ -6,10 +6,9 @@
         </button>
         <h2>Instructions</h2>
         <ul>
-        <li><p>Combine what you've learned to far to find the dates in this story. It's going to be a long expression, just remember that the dates will come in the form "Month Day, Year", (for example January 12, 1345).</p></li>
-        <li> Days can be either 1 or 2 numbers long</li>
-        <li> Remember that + lets you select one or more of the same type of character </li>
-        <li> Don't forget the comma!</li>
+            <li> Days can be either 1 or 2 numbers long</li>
+            <li> Remember that + lets you select one or more of the same type of character </li>
+            <li> Don't forget the comma!</li>
         </ul>
     </div>
     <button id="showInstructions" ng-show="!instructionsOn" class="btn btn-warning pull-right" ng-click="toggleInstructions()">
@@ -17,6 +16,7 @@
         <i class="glyphicon glyphicon-list-alt"></i>
     </button>
 
+    <p class="directions">Combine what you've learned to far to find the dates in this story. It's going to be a long expression, just remember that the dates will come in the form "Month Day, Year", (for example January 12, 1345).</p>
     <ra-regex elm-id="level2" template-name="level2.html" textbox-placeholder="Enter your regex command here" class="level"></ra-regex>
     </div>
 </span>

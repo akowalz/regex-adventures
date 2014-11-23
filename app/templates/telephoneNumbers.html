@@ -6,13 +6,16 @@
         </button>
         <h2>Instructions</h2>
         <ul>
-        <li>Now that you know how to select numbers, you can combine multiple search terms into one to select more complicated expressions. For example '\d-\d' selects a number, then the character "-", then another number, so it would match 8-4, or 9-2. Try selecting all the telephone numbers on the page.  Can I have yo Numbah?</li>
+        <li>For example '\d-\d' selects a number.</li>
+        <li>The character "-", then another number.</li>
         </ul>
+
     </div>
     <button id="showInstructions" ng-show="!instructionsOn" class="btn btn-warning pull-right" ng-click="toggleInstructions()">
         Instructions
         <i class="glyphicon glyphicon-list-alt"></i>
     </button>
 
+    <p class="directions">Now that you know how to select numbers, you can combine multiple search terms into one to select more complicated expressions.  Try selecting all the telephone numbers on the page.  Can I have yo Numbah?</p>
     <ra-regex elm-id="level3" template-name="level3.html" textbox-placeholder="Lemme get those digits"></ra-regex>
 </span>

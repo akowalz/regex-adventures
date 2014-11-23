@@ -7,15 +7,15 @@
         </button>
         <h2>Instructions</h2>
         <ul>
-        <li><p>So you've got the hang of numbers. Now, find all of the words that end in "y" in this poem. "\w" selects any letter character from a-z, whether it's lowercase or uppercase.</p></li>
+            <li> + will let you select any number of letters before the y</li>
+            <li> Don't put any spaces in your regular expression, it will look for those too!</li>
         </ul>
-        <li> + will let you select any number of letters before the y</li>
-        <li> Don't put any spaces in your regular expression, it will look for those too!</li>
     </div>
     <button id="showInstructions" ng-show="!instructionsOn" class="btn btn-warning pull-right" ng-click="toggleInstructions()">
         Instructions
         <i class="glyphicon glyphicon-list-alt"></i>
     </button>
+    <p class="directions">So you've got the hang of numbers. Now, find all of the words that end in "y" in this poem. "\w" selects any letter character from a-z, whether it's lowercase or uppercase.</p>
     <ra-regex elm-id="level4" template-name="level4.html" textbox-placeholder="Enter your regex command here" class="level"></ra-regex>
     </div>
 </span>
