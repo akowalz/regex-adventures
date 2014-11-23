@@ -181,13 +181,15 @@
 <!-- <button type="button" ng-click="nextPage()">Next Level</button> -->
 <div id="pt-main" class="pt-perspective">
 	<div class="pt-page pt-page-1">
-		<div ng-include src="'templates/landingPage.html'"></div>
+		<div ng-include src="'templates/intro.html'"></div>
         <!-- <p class="instructions">Type the expression in the box to select all of the test scores</p> -->
         <!-- <input class="form-control input-lg" type="text" placeholder="\d" ng-focus="searching=true" ng-blur="searching=false"> -->
 	</div>
-	<div class="pt-page pt-page-2"><div ng-include src="'templates/level2.html'"></div></div>
-	<div class="pt-page pt-page-3"><div ng-include src="'templates/level3.html'"></div></div>
-	<div class="pt-page pt-page-4"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
+	<div class="pt-page pt-page-2"><div ng-include src="'templates/landingPage.html'"></div></div>
+	<div class="pt-page pt-page-3"><div ng-include src="'templates/level2.html'"></div></div>
+  <div class="pt-page pt-page-4">
+    <div ng-include src="'templates/level3.html'"></div>
+  </div>
 	<div class="pt-page pt-page-5"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
 	<div class="pt-page pt-page-6"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
 </div>

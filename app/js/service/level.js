@@ -2,9 +2,9 @@ angular.module('app')
 .service('LevelService', function() {
     // array levels containing the answers
     var answers = {
-        0: ["Let's go!"]
-        1: ["77", "78", "74", "60", "96", "86", "60", "81", "91"],
-        2: ["April 23, 1952", "January 21, 1952"]
+        1: ["Let's go!"],
+        2: ["77", "78", "74", "60", "96", "86", "60", "81", "91"],
+        3: ["April 23, 1952", "January 21, 1952"]
     }
 
     function isEqual(array1, array2){
