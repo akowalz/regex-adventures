@@ -1,4 +1,4 @@
-angular.module('myApp')
+angular.module('app')
 .directive('raRegexContent', function() {
   return {
     restrict: 'AE',
