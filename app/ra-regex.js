@@ -6,6 +6,7 @@ angular.module('app')
     transclude: true,
     scope: {
       templateName: '@',
+      textboxPlaceholder: '@',
       elmId: '@'
     },
 
