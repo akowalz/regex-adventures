@@ -1,0 +1,24 @@
+<span ng-controller="InstructionsCtrl" class="col-md-offset-2 col-md-8">
+    <div class="instructions" ng-show="instructionsOn" id="instructionsBox">
+        <button class="btn btn-success pull-right" style="margin-bottom: 10px;" ng-click="toggleInstructions()">
+            Got It
+            <i class="glyphicon glyphicon-ok"></i>
+        </button>
+        <h2>Instructions</h2>
+        <ul>
+        <li>Regex allows you to search by type of character on the page. So you can select only numbers by entering \d<br>
+        Select all of the test scores by typing the expression given in the box<br>
+        \d selects one digit (0-9) from the text on the page.<br>
+        + means that you'll select 1 or more of the previous character. </p></li>
+        <li>So \d+ selects one or more digits in a row. </li>
+        </ul>
+    </div>
+    <div class="content">
+        <button id="showInstructions" ng-show="!instructionsOn" class="btn btn-warning pull-right" ng-click="toggleInstructions()">
+            Instructions
+            <i class="glyphicon glyphicon-list-alt"></i>
+        </button>
+        <p class="directions">Type the expression in the box to select all of the test scores</p>
+        <ra-regex elm-id="level1" template-name="level1.html" textbox-placeholder="\d+"></ra-regex>
+    </div>
+</span>

@@ -1,0 +1,40 @@
+<<<<<<< HEAD
+<span ng-controller="InstructionsCtrl">
+    <div class="col-md-offset-1 col-md-10 instructions" ng-show="instructionsOn" id="instructionsBox">
+        <h2>Instructions</h2>
+        <ul>
+        <li>Extra instructions will go here!</li>
+        </ul>
+        <button class="btn btn-danger pull-right" style="margin-bottom: 10px;" ng-click="toggleInstructions()">
+            Hide
+            <i class="glyphicon glyphicon-remove"></i>
+        </button>
+    </div>
+    <div class="col-md-10 col-md-offset-1 content">
+        <button id="showInstructions" ng-show="!instructionsOn" class="btn btn-primary pull-right" ng-click="toggleInstructions()">
+            Instructions
+            <i class="glyphicon glyphicon-list-alt"></i>
+        </button>
+        <p class="directions">Type the expression in the box to select all of the test scores</p>
+        <ra-regex elm-id="level1" template-name="level1.html" textbox-placeholder="\d+"></ra-regex>
+    </div>
+</span>
+
+<!-- <div class="col-md-2" style="border: solid; border-radius: 5px; background-color: orange; margin-top: 10px;">
+	<h2>Instructions</h2>
+=======
+<div class="col-md-8 col-md-offset-1 content">
+    <p style="text-align: center">
+    	Regex allows you to search by type of character on the page. So you can select only numbers by entering \d<br>
+    	Select all of the test scores by typing the expression given in the box<br>
+    	\d selects one digit (0-9) from the text on the page.<br>
+    	+ means that you'll select 1 or more of the previous character.  </p>
+    <ra-regex elm-id="level1" template-name="level1.html" textbox-placeholder="\d+"></ra-regex>
+</div>
+<div class="col-md-2" style="border: solid; border-radius: 5px; background-color: orange; margin-top: 10px;">
+	<h2>Hints</h2>
+>>>>>>> fc80eb666e0135ac965c8089cd74e626e1506de7
+	<ul>
+		<li> So \d+ selects one or more digits in a row. </li>
+	</ul>
+</div> -->

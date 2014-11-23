@@ -1,0 +1,22 @@
+<span ng-controller="InstructionsCtrl" class="col-md-offset-2 col-md-8">
+    <div class="instructions" ng-show="instructionsOn" id="instructionsBox">
+        <button class="btn btn-success pull-right" style="margin-bottom: 10px;" ng-click="toggleInstructions()">
+            Got It
+            <i class="glyphicon glyphicon-ok"></i>
+        </button>
+        <h2>Instructions</h2>
+        <ul>
+            <li> Days can be either 1 or 2 numbers long</li>
+            <li> Remember that + lets you select one or more of the same type of character </li>
+            <li> Don't forget the comma!</li>
+        </ul>
+    </div>
+    <button id="showInstructions" ng-show="!instructionsOn" class="btn btn-warning pull-right" ng-click="toggleInstructions()">
+        Instructions
+        <i class="glyphicon glyphicon-list-alt"></i>
+    </button>
+
+    <p class="directions">Combine what you've learned to far to find the dates in this story. It's going to be a long expression, just remember that the dates will come in the form "Month Day, Year", (for example January 12, 1345).</p>
+    <ra-regex elm-id="level2" template-name="level2.html" textbox-placeholder="Enter your regex command here" class="level"></ra-regex>
+    </div>
+</span>
