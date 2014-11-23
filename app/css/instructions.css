@@ -6,6 +6,7 @@
     -webkit-transition: all 0.7s ease-out;
     transition: all 0.7s ease-out;
 }
-.reflow{
-    border-right: 2px solid transparent;
+.content: {
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
 } 
