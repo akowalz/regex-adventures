@@ -30,17 +30,21 @@ angular.module('app')
       scope.matches = [];
       scope.won = false;
 
+      var getMessage = function(){
+        return ProblemService.getMessage(scope.regex);
+      };
+
 
       scope.nextLevelAlert = function(){
          swal({
            title: "Level Complete!",
-            text: "Continue to next level?",
+            text: getMessage(),
             type: "success",
             showCancelButton: true,
             confirmButtonColor: "#5ED251",
             confirmButtonText: "Next Level",
-            closeOnConfirm: true 
-          }, function(){   
+            closeOnConfirm: true
+          }, function(){
             console.log('hello');
             scope.nextPage();
          });
