@@ -1,0 +1,11 @@
+.instructions{
+    border: solid;
+    border-radius: 5px;
+    background-color: orange;
+    margin-top: 10px;
+    -webkit-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out;
+}
+.reflow{
+    border-right: 2px solid transparent;
+} 

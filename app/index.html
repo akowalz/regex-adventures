@@ -20,6 +20,7 @@
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
 	<link rel="stylesheet" type="text/css" href="css/animations.css" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/instructions.css">
 
 
 	<script src="js/modernizr.custom.js"></script>
@@ -182,11 +183,13 @@
 <div id="pt-main" class="pt-perspective">
 	<div class="pt-page pt-page-1">
 		<div ng-include src="'templates/intro.html'"></div>
-        <!-- <p class="instructions">Type the expression in the box to select all of the test scores</p> -->
-        <!-- <input class="form-control input-lg" type="text" placeholder="\d" ng-focus="searching=true" ng-blur="searching=false"> -->
 	</div>
-	<div class="pt-page pt-page-2"><div ng-include src="'templates/landingPage.html'"></div></div>
-	<div class="pt-page pt-page-3"><div ng-include src="'templates/level2.html'"></div></div>
+	<div class="pt-page pt-page-2">
+        <div ng-include src="'templates/landingPage.html'"></div>
+    </div>
+	<div class="pt-page pt-page-3">
+        <div ng-include src="'templates/level2.html'"></div>
+    </div>
   <div class="pt-page pt-page-4">
     <div ng-include src="'templates/level3.html'"></div>
   </div>
@@ -207,6 +210,7 @@
 <script src="js/service/problem.js"></script>
 <script src="js/service/level.js"></script>
 <script type="text/javascript" src="lib/regex_highlight.js"></script>
+<script type="text/javascript" src="js/ctrl/instructions.js"></script>
 
 <script src="ra-regex.js"></script>
 <script src="ra-regex-content.js"></script>

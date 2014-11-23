@@ -1,29 +1,35 @@
-<div class="col-md-8 col-md-offset-1 content">
-  <p>
-    Welcome to <em>Regex Adventure!</em> An online game that teaches
-    <em>you</em> how to effectively use regular expressions with fun interactive
-    stories!</p>
-    <p>Regular Expressions (or regexes for short) are a powerful tool for
-    matching substrings within a large piece of text.  Think
-    <strong>Ctrl-F</strong> on steroids!  But unlike Ctrl-F, you can match
-    against more than just specific characters.  What if you wanted to search a
-    document for all words longer than four characters?  Text formatted like an
-    address?  All variable names in hyphenated-case?  Strings inside
-    parenthesis?  Valid email addresses?  It's all possible and more with
-    regular expressions, all you have to learn are some special sequences than
-    can more than just one character.  If that doesn't make sense, don't worry,
-    it will soon!</p>
+<span ng-controller="InstructionsCtrl">
+    <div class="col-md-offset-1 col-md-10 instructions" style="top: {{top}}px;" id="instructionsBox">
+        <h2>Instructions</h2>
+        <ul>
+        <li>Extra instructions will go here!</li>
+        </ul>
+        <button class="btn btn-danger pull-right" style="margin-bottom: 10px;" ng-click="hide()">
+            Hide
+            <i class="glyphicon glyphicon-remove"></i>
+        </button>
+    </div>
+    <div class="col-md-10 col-md-offset-1 content" ng-class="reflow ? 'reflow' : ''" style="top: {{body}}px;">
+      <p>
+        Welcome to <em>Regex Adventure!</em> An online game that teaches
+        <em>you</em> how to effectively use regular expressions with fun interactive
+        stories!</p>
+        <p>Regular Expressions (or regexes for short) are a powerful tool for
+        matching substrings within a large piece of text.  Think
+        <strong>Ctrl-F</strong> on steroids!  But unlike Ctrl-F, you can match
+        against more than just specific characters.  What if you wanted to search a
+        document for all words longer than four characters?  Text formatted like an
+        address?  All variable names in hyphenated-case?  Strings inside
+        parenthesis?  Valid email addresses?  It's all possible and more with
+        regular expressions, all you have to learn are some special sequences than
+        can more than just one character.  If that doesn't make sense, don't worry,
+        it will soon!</p>
 
-    <p>The most simple regular expression just contains simple (or <em>literal</em>) charcacters.  It
-    works just like Ctrl-F!  The goal of each level is to select all the of the
-    red text, and nothing else, so to continue select the string below by typingthe
-    regex "Let's go!"</p>
-    </p>
-    <ra-regex elm-id="intro" template-name="intro.html" textbox-placeholder="Let's Go!"></ra-regex>
-</div>
-<div class="col-md-2" style="border: solid; border-radius: 5px; background-color: orange; margin-top: 10px;">
-	<h2>Instructions</h2>
-	<ul>
-    <li>Extra instructions will go here!</li>
-	</ul>
-</div>
+        <p>The most simple regular expression just contains simple (or <em>literal</em>) charcacters.  It
+        works just like Ctrl-F!  The goal of each level is to select all the of the
+        red text, and nothing else, so to continue select the string below by typingthe
+        regex "Let's go!"</p>
+        </p>
+        <ra-regex elm-id="intro" template-name="intro.html" textbox-placeholder="Let's Go!"></ra-regex>
+    </div>
+</span>
