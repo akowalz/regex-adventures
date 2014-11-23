@@ -53,6 +53,11 @@ h1{
 
 .instructions{
     font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.instructions::first-letter{
+    font-size: 30px;
 }
 
 .selectData{
@@ -76,7 +81,7 @@ h1{
     box-shadow: 1px 1px 1px grey;
 }
 
-.userHighlight{
+.correct{
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     background-color: rgb(9, 219, 115);
@@ -97,3 +102,7 @@ h1{
     margin: 10px;
 }
 */
+
+.warning{
+    background-color: #ED9D09; /*orange*/
+}
