@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+    <script>
+    angular.module('app', []);
+
+    angular.module('app')
+    .controller('BodyController', function($scope, LevelService) {
+        $scope.hello = 'Hi';
+        $scope.test = function(){
+            LevelService 
+        }
+    });
+    </script>
+    <script type="text/javascript" src="../../tests/js/service/level.js"></script>
+    
+</head>
+<body ng-controller="BodyController">
+{{hello}}
+</body>
+</html>
