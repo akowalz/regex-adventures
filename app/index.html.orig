@@ -184,8 +184,17 @@
 	<div class="pt-page pt-page-1">
 		<div ng-include src="'templates/intro.html'"></div>
 	</div>
+<<<<<<< HEAD
 	<div class="pt-page pt-page-2"><div ng-include src="'templates/landingPage.html'"></div></div>
 	<div class="pt-page pt-page-3"><div ng-include src="'templates/telephoneNumbers.html'"></div></div>
+=======
+	<div class="pt-page pt-page-2">
+        <div ng-include src="'templates/landingPage.html'"></div>
+    </div>
+	<div class="pt-page pt-page-3">
+        <div ng-include src="'templates/level2.html'"></div>
+    </div>
+>>>>>>> FETCH_HEAD
   <div class="pt-page pt-page-4">
     <div ng-include src="'templates/wordsEndInY.html'"></div>
   </div>

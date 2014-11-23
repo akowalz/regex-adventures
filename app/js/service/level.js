@@ -22,6 +22,8 @@ angular.module('app')
 
     // level starts at 0
     var hasWon = function(level, currentAnswer){
+        if (level === null || currentAnswer === null) { return false; }
+
         if (answers[level].length !== currentAnswer.length){
             return false;
         }

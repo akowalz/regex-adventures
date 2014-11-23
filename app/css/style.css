@@ -45,12 +45,12 @@ h1{
     background: #f68dbb;
 }
 
-.instructions{
+.directions{
     font-weight: bold;
     font-size: 20px;
     text-transform: capitalize;
 }
-.instructions::first-letter{
+.directions::first-letter{
     font-size: 30px;
 }
 
