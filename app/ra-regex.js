@@ -30,6 +30,22 @@ angular.module('app')
       scope.matches = [];
       scope.won = false;
 
+
+      scope.nextLevelAlert = function(){
+         swal({
+           title: "Level Complete!",
+            text: "Continue to next level?",
+            type: "success",
+            showCancelButton: true,
+            confirmButtonColor: "#5ED251",
+            confirmButtonText: "Next Level",
+            closeOnConfirm: true 
+          }, function(){   
+            console.log('hello');
+            scope.nextPage();
+         });
+      };
+
       scope.runMatches = function () {
         var elm = $("#" + scope.elmId);
         var sourceText = elm.text();
@@ -48,6 +64,7 @@ angular.module('app')
 
         if (LevelService.hasWon(ProblemService.getLevel(), scope.matches)) {
           scope.won = true;
+          scope.nextLevelAlert();
         }
       };
     }
