@@ -1,3 +1,3 @@
-<input type="text" ng-model="regex" ng-keyup="runMatches()" class="form-control input-lg" placeholder="\d"></input>
+<input type="text" ng-model="regex" ng-keyup="runMatches()" class="form-control input-lg" placeholder="{{textboxPlaceholder}}"></input>
 <ra-regex-content template="{{templateName}}"></ra-regex-content>
 <button ng-show="won" ng-click="nextPage()">You won! Move to next level</button>
