@@ -1,26 +1,10 @@
 'use strict';
 
 angular.module('myApp')
+
 .controller('playCtrl', function($scope) {
-  $scope.regex = "";
-  $scope.matches = [];
-  $scope.mtext = "This is some match text to test your regex on";
 
-  $scope.runMatches = function () {
-    $("#match-text").highlightRegex();
-
-    if ($scope.regex !== "" && validateRegex($scope.regex)) {
-      var re = new RegExp($scope.regex, "g");
-      $scope.matches = $scope.mtext.match(re);
-      $("#match-text").highlightRegex(re);
-    } else if ($scope.regex == "") {
-      $scope.matches = [];
-
-      $("#match-text").highlightRegex();
-    }
-  };
-
-  function validateRegex(regex) {
+  var validRegex = function(regex) {
     var valid;
     try {
       new RegExp(regex);
@@ -29,5 +13,26 @@ angular.module('myApp')
       valid = false;
     }
     return valid;
-  }
+  };
+
+  var elm = $("#" + $scope.elmId);
+  var sourceText = elm.text();
+  $scope.regex = "";
+  $scope.matches = [];
+
+  $scope.runMatches = function () {
+    elm.highlightRegex();
+
+    if ($scope.regex !== "" && validRegex($scope.regex)) {
+      var re = new RegExp($scope.regex, "g");
+      $scope.matches = sourceText.match(re);
+      elm.highlightRegex(re);
+
+    } else if ($scope.regex == "") {
+      $scope.matches = [];
+
+      elm.highlightRegex();
+    }
+  };
+
 });
