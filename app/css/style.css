@@ -101,3 +101,12 @@ h1{
 .warning{
     background-color: #ED9D09; /*orange*/
 }
+
+
+.level{
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.16);
+}
