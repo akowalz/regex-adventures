@@ -16,11 +16,13 @@
 }
 
 h1{
-    margin-bottom: 0px;
+    margin: 10px;
+    display: inline-block;
     font-size: 40px;
+
 }
 
-h3{
+.moto{
     font-style: italic;
 }
 
@@ -55,8 +57,8 @@ h3{
 
 .selectData{
     color: rgba(255, 255, 255,.4);
-    -webkit-transition: all 0.1s ease;
-    transition: all 0.1s ease;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .highlight{
@@ -64,4 +66,8 @@ h3{
     transition: all 0.2s ease;
     color: yellow;
     font-size: 125%;
+}
+
+.content{
+    margin-top: 10px;
 }
