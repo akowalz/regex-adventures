@@ -9,14 +9,14 @@
     .controller('BodyController', function($scope, LevelService) {
         $scope.hello = 'Hi';
         $scope.test = function(){
-            LevelService 
+          console.log(LevelService.hasWon(1, [2,0,1]));
         }
     });
     </script>
-    <script type="text/javascript" src="../../tests/js/service/level.js"></script>
-    
+    <script type="text/javascript" src="../../js/service/level.js"></script>
+
 </head>
 <body ng-controller="BodyController">
-{{hello}}
+<button ng-click="test()">Test</button>
 </body>
 </html>

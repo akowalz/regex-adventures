@@ -1,5 +1,5 @@
 angular.module('app')
-.directive('raRegex', function() {
+.directive('raRegex', function(LevelService, ProblemService) {
   return {
     restrict: 'E',
     templateUrl: 'views/regex.tpl.html',
@@ -10,6 +10,9 @@ angular.module('app')
     },
 
     link: function(scope, element, attrs) {
+      scope.nextPage = function () {
+        ProblemService.nextProblem();
+      };
 
       var validRegex = function(regex) {
         var valid;
@@ -24,6 +27,7 @@ angular.module('app')
 
       scope.regex = "";
       scope.matches = [];
+      scope.won = false;
 
       scope.runMatches = function () {
         var elm = $("#" + scope.elmId);
@@ -40,8 +44,11 @@ angular.module('app')
 
           elm.highlightRegex();
         }
-      };
 
+        if (LevelService.hasWon(1, scope.matches)) {
+          scope.won = true;
+        }
+      };
     }
   };
 });
