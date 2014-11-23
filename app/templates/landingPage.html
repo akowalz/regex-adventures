@@ -1,5 +1,9 @@
-<span ng-controller="InstructionsCtrl">
-    <div class="col-md-offset-1 col-md-10 instructions" ng-show="instructionsOn" id="instructionsBox">
+<span ng-controller="InstructionsCtrl" class="col-md-offset-2 col-md-8">
+    <div class="instructions" ng-show="instructionsOn" id="instructionsBox">
+        <button class="btn btn-danger pull-right" style="margin-bottom: 10px;" ng-click="toggleInstructions()">
+            Got It
+            <i class="glyphicon glyphicon-remove"></i>
+        </button>
         <h2>Instructions</h2>
         <ul>
         <li>Regex allows you to search by type of character on the page. So you can select only numbers by entering \d<br>
@@ -8,13 +12,9 @@
         + means that you'll select 1 or more of the previous character. </p></li>
         <li>So \d+ selects one or more digits in a row. </li>
         </ul>
-        <button class="btn btn-danger pull-right" style="margin-bottom: 10px;" ng-click="toggleInstructions()">
-            Got It
-            <i class="glyphicon glyphicon-remove"></i>
-        </button>
     </div>
-    <div class="col-md-10 col-md-offset-1 content">
-        <button id="showInstructions" ng-show="!instructionsOn" class="btn btn-primary pull-right" ng-click="toggleInstructions()">
+    <div class="content">
+        <button id="showInstructions" ng-show="!instructionsOn" class="btn btn-warning pull-right" ng-click="toggleInstructions()">
             Instructions
             <i class="glyphicon glyphicon-list-alt"></i>
         </button>
