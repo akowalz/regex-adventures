@@ -18,8 +18,23 @@ angular.module('app')
     return currentProblem + 1;
   };
 
+  var getMessage = function(regex) {
+    switch(currentProblem) {
+      case 1:
+        if(regex != "\\d+") {
+          return "Great work! You could have also written \\d+";
+        }
+        else
+          return "Continue to next level?";
+        break;
+      default:
+        return "Continue to next level?";
+    }
+  };
+
   return {
       nextProblem: nextProblem,
-      getLevel: getLevel
+      getLevel: getLevel,
+      getMessage: getMessage
   };
 });
